@@ -1,15 +1,21 @@
 
-
+    <div class="product-heading">
+        <h1>Products</h1>
+    </div>
 <div class="products">
 
     <div *ngFor="let product of products">
 
         <div class="card" style="width: 18rem;">
             <img class="card-img-top" src="../../../assets/images/product.jpg" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">{{ product.name }}</h5>
-                <p class="card-text">{{ product.description }}</p>
-                <a href="#" class="btn btn-primary">Add to card</a>
+            <div class="card-body" >
+                <h5 class="card-title">
+                    <a [routerLink]="['/products', product.id]">
+                        {{ product.name }}
+                    </a>
+                </h5>
+                <p class="card-text" *ngIf="product.description" >{{ product.description }}</p>
+                <a href="#" class="btn btn-primary" (click)="addToCart()">Add to card</a>
             </div>
         </div>
       

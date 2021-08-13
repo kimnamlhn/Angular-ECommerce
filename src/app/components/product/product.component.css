@@ -3,3 +3,9 @@
     flex-wrap: wrap;
     justify-content: center;
 }
+
+
+.product-heading{
+    display: flex;
+    justify-content: center;
+}
