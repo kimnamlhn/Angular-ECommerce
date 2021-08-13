@@ -9,6 +9,7 @@ import { ProductComponent } from './components/product/product.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ProductDetailsComponent } from './components/product-details/product-details.component';
 import { RouterModule } from '@angular/router';
+import { CartComponent } from './components/cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { RouterModule } from '@angular/router';
     HeaderComponent,
     ProductComponent,
     FooterComponent,
-    ProductDetailsComponent
+    ProductDetailsComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,
@@ -25,6 +27,8 @@ import { RouterModule } from '@angular/router';
     RouterModule.forRoot([
       {path: '', component: ProductComponent},
       {path: 'products/:productId', component: ProductDetailsComponent},
+      { path: 'cart', component: CartComponent },
+
     ]), 
 
   ],

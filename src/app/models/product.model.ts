@@ -10,7 +10,7 @@ export const products = [
     id: 1,
     name: 'Ao dai Viet Nam',
     price: 15000,
-    description: 'Ao dai Viet Nam mang phong cach Viet Nam :)'
+    description: 'Ao dai phong cach Viet Nam :)'
   },
   {
     id: 2,
