@@ -36,8 +36,7 @@
                     <h4 class="price">price: <span>{{product.price}}</span></h4>
                     <p class="vote"><strong>91%</strong> of buyers enjoyed this product! <strong>(87 votes)</strong></p>
                     <div class="action">
-                        <button class="add-to-cart btn btn-default" type="button">add to cart</button>
-                        <button class="like btn btn-default" type="button"><span class="fa fa-heart"></span></button>
+                        <button class="add-to-cart btn btn-default" type="button" (click)="addToCart(product)">add to cart</button>
                     </div>
                 </div>
             </div>
