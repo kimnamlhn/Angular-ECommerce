@@ -8,20 +8,20 @@ export interface Product {
 export const products = [
   {
     id: 1,
-    name: 'Ao quan',
+    name: 'Ao dai Viet Nam',
     price: 15000,
-    description: 'Lorem ipsum dolor sit amet, consectetur elit.'
+    description: 'Ao dai Viet Nam mang phong cach Viet Nam :)'
   },
   {
     id: 2,
-    name: 'Giay dep ',
+    name: 'Dien thoai iphone',
     price: 60000,
-    description: 'Lorem ipsum dolor sit amet, consectetur elit.'
+    description: 'Dien thoai iphone nhung co CH play'
   },
   {
     id: 3,
-    name: 'Dien thoai',
+    name: 'Nguoi yeu cho dan FA',
     price: 30000,
-    description: 'Lorem ipsum dolor sit amet, consectetur elit.'
+    description: 'Tao e qua nen t muon mua mon nay'
   }
 ];
